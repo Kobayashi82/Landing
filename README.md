@@ -51,9 +51,7 @@
 ### Essential
 - `Kerbal Space Program` with `kOS mod` installed
 - `Trajectories mod` (for accurate impact prediction)
-
-### Optional
-- `Biome mod` (for biome information display)
+- `Biome mod` (for biome information display. Optional)
 
 ## 🔧 Installation
 
@@ -69,7 +67,7 @@
 1. Launch your craft and achieve a descent trajectory
 2. Run the main script:
    ```kerboscript
-   RUNPATH("SBurn").
+  run SBurn.
    ```
 
 ### With Parameters
@@ -77,7 +75,7 @@
 You can customize the behavior by passing parameters:
 
 ```kerboscript
-RUNPATH("SBurn", "LaunchPad", True, 20, 300, "Yes", "Yes", "Yes", "Yes", 5, 80000).
+run SBurn("LaunchPad", True, 20, 300, "Yes", "Yes", "Yes", "Yes", 5, 80000).
 ```
 
 #### Parameters (in order):

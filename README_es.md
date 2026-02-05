@@ -48,12 +48,9 @@
 
 ## 🖥️ Requisitos
 
-### Esenciales
 - `Kerbal Space Program` con `mod kOS` instalado
 - `Mod Trajectories` (para predicción precisa de impacto)
-
-### Opcionales
-- `Mod de Biomas` (para mostrar información de biomas)
+- `Mod de Biomas` (para mostrar información de biomas. Opcional)
 
 ## 🔧 Instalación
 
@@ -69,7 +66,7 @@
 1. Lanza tu nave y consigue una trayectoria de descenso
 2. Ejecuta el script principal:
    ```kerboscript
-   RUNPATH("SBurn").
+  run SBurn.
    ```
 
 ### Con parámetros
@@ -77,7 +74,7 @@
 Puedes personalizar el comportamiento pasando parámetros:
 
 ```kerboscript
-RUNPATH("SBurn", "LaunchPad", True, 20, 300, "Yes", "Yes", "Yes", "Yes", 5, 80000).
+run SBurn("LaunchPad", True, 20, 300, "Yes", "Yes", "Yes", "Yes", 5, 80000).
 ```
 
 #### Parámetros (en orden):
