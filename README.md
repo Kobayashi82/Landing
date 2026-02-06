@@ -93,6 +93,24 @@ When the menu is displayed:
 - `D`: Set destination (when applicable)
 - `Enter`: Start the landing sequence
 
+## ⚙️ Configuration
+
+### Custom Pad List
+
+Pads are stored in `Pads.ks` as triplets: name, coordinates, body name.
+
+```kerboscript
+cPads:Add("My Custom Pad").
+cPads:Add("12.345678, -98.765432").
+cPads:Add("Kerbin").
+```
+
+### Tuning Parameters
+
+- `Extra Altitude`: Increase for more safety margin, decrease for fuel efficiency
+- `Efficiency`: Higher values trigger burns earlier (safer but less fuel efficient)
+- `Auto-Slope`: Enables automatic terrain slope detection and adjustment
+
 ## 🧪 How It Works
 
 ### State Machine
@@ -134,24 +152,6 @@ For precision landing:
 - `LaunchPads.ks`: Landing pad database and management
 - `Pads.ks`: Landing pad coordinate definitions
 - `Mira.ks`: Additional utility functions
-
-## ⚙️ Configuration
-
-### Custom Pad List
-
-Pads are stored in `Pads.ks` as triplets: name, coordinates, body name.
-
-```kerboscript
-cPads:Add("My Custom Pad").
-cPads:Add("12.345678, -98.765432").
-cPads:Add("Kerbin").
-```
-
-### Tuning Parameters
-
-- `Extra Altitude`: Increase for more safety margin, decrease for fuel efficiency
-- `Efficiency`: Higher values trigger burns earlier (safer but less fuel efficient)
-- `Auto-Slope`: Enables automatic terrain slope detection and adjustment
 
 ## 📚 Troubleshooting
 

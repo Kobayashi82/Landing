@@ -92,6 +92,24 @@ Cuando el menú está visible:
 - `D`: Establecer destino (cuando aplique)
 - `Enter`: Iniciar la secuencia de aterrizaje
 
+## ⚙️ Configuración
+
+### Lista de plataformas personalizadas
+
+Las plataformas se guardan en `Pads.ks` como tripletas: nombre, coordenadas, cuerpo.
+
+```kerboscript
+cPads:Add("My Custom Pad").
+cPads:Add("12.345678, -98.765432").
+cPads:Add("Kerbin").
+```
+
+### Ajuste de parámetros
+
+- `Altitud extra`: Aumenta para más margen de seguridad, reduce para eficiencia de combustible
+- `Eficiencia`: Valores mayores disparan burns antes (más seguro pero menos eficiente)
+- `Auto-Slope`: Habilita detección automática de pendiente del terreno y ajuste
+
 ## 🧪 Cómo funciona
 
 ### Máquina de estados
@@ -133,24 +151,6 @@ Para aterrizajes de precisión:
 - `LaunchPads.ks`: Base de datos y gestión de plataformas
 - `Pads.ks`: Definiciones de coordenadas de plataformas
 - `Mira.ks`: Funciones utilitarias adicionales
-
-## ⚙️ Configuración
-
-### Lista de plataformas personalizadas
-
-Las plataformas se guardan en `Pads.ks` como tripletas: nombre, coordenadas, cuerpo.
-
-```kerboscript
-cPads:Add("My Custom Pad").
-cPads:Add("12.345678, -98.765432").
-cPads:Add("Kerbin").
-```
-
-### Ajuste de parámetros
-
-- `Altitud extra`: Aumenta para más margen de seguridad, reduce para eficiencia de combustible
-- `Eficiencia`: Valores mayores disparan burns antes (más seguro pero menos eficiente)
-- `Auto-Slope`: Habilita detección automática de pendiente del terreno y ajuste
 
 ## 📚 Solución de problemas
 
