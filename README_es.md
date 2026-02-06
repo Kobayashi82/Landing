@@ -54,30 +54,18 @@
 
 ## 🔧 Instalación
 
-1. Instala el mod kOS para Kerbal Space Program
-2. Instala el mod Trajectories
+1. Instala el mod `kOS` para Kerbal Space Program
+2. Instala el mod `Trajectories`
 3. Clona o descarga este repositorio
 4. Copia todos los archivos `.ks` a tu carpeta `Ships/Script` de KSP o cárgalos en el procesador kOS de tu nave
 
 ## 🎮 Uso
 
-### Uso básico
-
-1. Lanza tu nave y consigue una trayectoria de descenso
-2. Ejecuta el script principal:
-   ```kerboscript
-  run SBurn.
-   ```
-
-### Con parámetros
-
-Puedes personalizar el comportamiento pasando parámetros:
-
 ```kerboscript
-run SBurn("LaunchPad", True, 20, 300, "Yes", "Yes", "Yes", "Yes", 5, 80000).
+run sburn.
 ```
 
-#### Parámetros (en orden):
+### Parámetros:
 1. `P_Pad` (string): Nombre de la plataforma o "Anywhere" (por defecto: "Anywhere")
 2. `P_ShowInfo` (boolean): Mostrar información durante el descenso (por defecto: True)
 3. `P_ExtraAlt` (number): Margen de altitud extra en metros (por defecto: 20)
@@ -148,21 +136,14 @@ Para aterrizajes de precisión:
 
 ## ⚙️ Configuración
 
-### Añadir plataformas personalizadas
+### Lista de plataformas personalizadas
 
-Edita `Pads.ks` para agregar tus propias plataformas. El formato es un triplete de: nombre, cadena de coordenadas y nombre del cuerpo:
+Las plataformas se guardan en `Pads.ks` como tripletas: nombre, coordenadas, cuerpo.
 
 ```kerboscript
 cPads:Add("My Custom Pad").
 cPads:Add("12.345678, -98.765432").
 cPads:Add("Kerbin").
-```
-
-Ejemplo de `Pads.ks`:
-```kerboscript
-cPads:Add("Moon Base 1").
-cPads:Add("4.30071551879227, 74.7929188603752").
-cPads:Add("Mun").
 ```
 
 ### Ajuste de parámetros
@@ -174,8 +155,8 @@ cPads:Add("Mun").
 ## 📚 Solución de problemas
 
 ### Trajectories no encontrado
-- Asegúrate de que el mod Trajectories esté instalado y activo
-- El script esperará hasta que Trajectories esté disponible
+- Asegúrate de que el mod `Trajectories` esté instalado y activo
+- El script esperará hasta que `Trajectories` esté disponible
 
 ### No hay empuje disponible
 - Verifica que tus motores estén activos y con combustible

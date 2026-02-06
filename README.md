@@ -55,30 +55,18 @@
 
 ## 🔧 Installation
 
-1. Install kOS mod for Kerbal Space Program
-2. Install Trajectories mod
+1. Install `kOS` mod for Kerbal Space Program
+2. Install `Trajectories` mod
 3. Clone or download this repository
 4. Copy all `.ks` files to your KSP `Ships/Script` folder or load them onto your craft's kOS processor
 
 ## 🎮 Usage
 
-### Basic Usage
-
-1. Launch your craft and achieve a descent trajectory
-2. Run the main script:
-   ```kerboscript
-  run SBurn.
-   ```
-
-### With Parameters
-
-You can customize the behavior by passing parameters:
-
 ```kerboscript
-run SBurn("LaunchPad", True, 20, 300, "Yes", "Yes", "Yes", "Yes", 5, 80000).
+run sburn.
 ```
 
-#### Parameters (in order):
+### Parameters
 1. `P_Pad` (string): Landing pad name or "Anywhere" (default: "Anywhere")
 2. `P_ShowInfo` (boolean): Display information during descent (default: True)
 3. `P_ExtraAlt` (number): Extra altitude margin in meters (default: 20)
@@ -149,21 +137,14 @@ For precision landing:
 
 ## ⚙️ Configuration
 
-### Adding Custom Landing Pads
+### Custom Pad List
 
-Edit `Pads.ks` to add your own landing pads. The format is a triplet of: name, coordinates string, and body name:
+Pads are stored in `Pads.ks` as triplets: name, coordinates, body name.
 
 ```kerboscript
 cPads:Add("My Custom Pad").
 cPads:Add("12.345678, -98.765432").
 cPads:Add("Kerbin").
-```
-
-Example from `Pads.ks`:
-```kerboscript
-cPads:Add("Moon Base 1").
-cPads:Add("4.30071551879227, 74.7929188603752").
-cPads:Add("Mun").
 ```
 
 ### Tuning Parameters
@@ -175,8 +156,8 @@ cPads:Add("Mun").
 ## 📚 Troubleshooting
 
 ### Trajectories Not Found
-- Ensure the Trajectories mod is installed and active
-- The script will wait until Trajectories is available
+- Ensure the `Trajectories` mod is installed and active
+- The script will wait until `Trajectories` is available
 
 ### No Available Thrust
 - Check that your engines are active and have fuel
