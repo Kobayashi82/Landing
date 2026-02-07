@@ -11,14 +11,14 @@
 </div>
 
 <div align="center">
-  <img src="/Suicide_Burn.png">
+  <img src="/Landing.png">
 </div>
 
 # Suicide Burn
 
 [README en Español](README_es.md)
 
-`Suicide Burn` is an advanced suicide burn autopilot script for `Kerbal Space Program` (KSP) written in `kOS` (Kerbal Operating System). It automates precision landing maneuvers, calculating the optimal burn altitude and executing controlled descents to designated landing pads or any surface location.    
+`Landing` is an advanced landing autopilot script for `Kerbal Space Program` (KSP) written in `kOS` (Kerbal Operating System). It automates precision landing maneuvers, calculating the optimal burn altitude and executing controlled descents to designated landing pads or any surface location.    
 
 `NOTES`: This README is only a template and does not represent the current state of the project. It is also not finished.
 
@@ -62,7 +62,7 @@
 ## 🎮 Usage
 
 ```kerboscript
-run sburn.
+run landing.
 ```
 
 ### Parameters
