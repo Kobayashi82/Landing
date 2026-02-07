@@ -14,7 +14,7 @@
   <img src="/Landing.png">
 </div>
 
-# Suicide Burn
+# Landing
 
 [README in English](README.md)
 
