@@ -6,8 +6,7 @@
 ![kOS](https://img.shields.io/badge/kOS-Autopilot-blue?style=for-the-badge)
 ![KSP](https://img.shields.io/badge/Kerbal-Space%20Program-orange?style=for-the-badge)
 
-
-*Script de aterrizaje automatizado con maniobra de suicide burn*
+*Automated landing script with suicide burn maneuver*
 
 </div>
 
