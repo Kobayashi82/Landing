@@ -11,7 +11,7 @@
 </div>
 
 <div align="center">
-  <img src="/Landing.png">
+  <img src="/W_Landing.png">
 </div>
 
 # Landing
